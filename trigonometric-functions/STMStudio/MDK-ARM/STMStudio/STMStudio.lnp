@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"stmstudio\startup_stm32f303xc.o"
+"stmstudio\system_stm32f3xx.o"
+"stmstudio\stm32f3xx_it.o"
+"stmstudio\stm32f3xx_hal_msp.o"
+"stmstudio\main.o"
+"stmstudio\stm32f3xx_hal_tim.o"
+"stmstudio\stm32f3xx_hal.o"
+"stmstudio\stm32f3xx_hal_rcc.o"
+"stmstudio\stm32f3xx_hal_spi_ex.o"
+"stmstudio\stm32f3xx_hal_rcc_ex.o"
+"stmstudio\stm32f3xx_hal_flash_ex.o"
+"stmstudio\stm32f3xx_hal_flash.o"
+"stmstudio\stm32f3xx_hal_i2c.o"
+"stmstudio\stm32f3xx_hal_gpio.o"
+"stmstudio\stm32f3xx_hal_pcd_ex.o"
+"stmstudio\stm32f3xx_hal_pwr_ex.o"
+"stmstudio\stm32f3xx_hal_i2c_ex.o"
+"stmstudio\stm32f3xx_hal_tim_ex.o"
+"stmstudio\stm32f3xx_hal_cortex.o"
+"stmstudio\stm32f3xx_hal_pwr.o"
+"stmstudio\stm32f3xx_hal_spi.o"
+"stmstudio\stm32f3xx_hal_dma.o"
+"stmstudio\stm32f3xx_hal_pcd.o"
+--library_type=microlib --strict --scatter "STMStudio\STMStudio.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STMStudio.map" -o STMStudio\STMStudio.axf
